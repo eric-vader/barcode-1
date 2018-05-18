@@ -4,8 +4,8 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/boombuler/barcode"
-	"github.com/boombuler/barcode/utils"
+	"github.com/eric-vader/barcode-go"
+	"github.com/eric-vader/barcode-go/utils"
 )
 
 type datamatrixCode struct {
