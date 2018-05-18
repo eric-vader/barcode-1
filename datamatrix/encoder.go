@@ -21,7 +21,7 @@ func Encode(content string) (barcode.Barcode, error) {
 	if size == nil {
 		return nil, errors.New("to much data to encode")
 	}
-	data = addPadding(data, size.DataCodewords())
+	//data = addPadding(data, size.DataCodewords())
 	data = ec.calcECC(data, size)
 	code := render(data, size)
 	if code != nil {
